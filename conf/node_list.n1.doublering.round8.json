@@ -1,0 +1,14 @@
+{
+  "nodes": {
+    "node0": {
+      "device": "cuda",
+      "round": 8,
+      "edges": {
+        "node6": 2,
+        "node7": 0,
+        "node1": 4,
+        "node2": 6
+      }
+    }
+  }
+}

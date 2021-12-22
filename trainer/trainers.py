@@ -223,7 +223,7 @@ class PdmmTrainer(ATrainer):
             np.random.shuffle(split_class_indices)
             for node_idx, node_indices in enumerate(node_to_class_idx):
                 sidx = (node_idx * self.nshift_of_nodes) % (len(split_class_indices))
-                eidx = sidx + self.node_per_classes
+                eidx = max(sidx + self.node_per_classes, num_classes)
                 class_indices = split_class_indices[sidx:eidx]
                 if eidx > len(split_class_indices):
                     class_indices += split_class_indices[:(

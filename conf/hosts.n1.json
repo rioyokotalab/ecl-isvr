@@ -1,0 +1,9 @@
+{
+  "hosts": [
+    {
+      "name": "node0",
+      "addr": "localhost",
+      "port": "10000"
+    }
+  ]
+}
